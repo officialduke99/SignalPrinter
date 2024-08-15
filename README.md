@@ -43,5 +43,5 @@ After that, you can add this node anywhere in the scene and remove it, when you 
 As GDScript currently doesn't support variable argument count, arguments in the function are added manually. Currently, the _max argument count per signal is **10**_, but if you need more, you can add them easily. 
 
 ## Further reading
-[How to create an EventBus in Godot](https://www.gdquest.com/tutorial/godot/design-patterns/event-bus-singleton/)
+[How to create an EventBus in Godot](https://www.gdquest.com/tutorial/godot/design-patterns/event-bus-singleton/)<br>
 [Theory behind the Observer pattern](https://gameprogrammingpatterns.com/observer.html)
