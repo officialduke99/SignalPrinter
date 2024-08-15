@@ -17,10 +17,14 @@ extends Node
 ## the signal's name, all arguments and (optionally) the time at
 ## which the signal was recieved. [br][br]
 ##
+## [b]Usage:[/b] You [b]NEED[/b] to replace [member global_bus] with your own
+## singleton's reference! Otherwise you get an error. After that, you can add 
+## this node anywhere in the scene and remove it, when you don't need it anymore. [br][br]
+## 
 ## [b]Warning:[/b] As GDScript currently doesn't support variable
 ## argument count, arguments in the function are added manually.
 ## Currently, the max argument count per signal is 10, but if you
-## need more, you can add them easily.
+## need more, you can add them easily. 
 ##
 ## @tutorial(EventBus usage in Godot): https://www.gdquest.com/tutorial/godot/design-patterns/event-bus-singleton/
 ## @tutorial(Observer pattern explanation): https://gameprogrammingpatterns.com/observer.html
@@ -31,7 +35,7 @@ const NAME_TAGS : String = "[u][b]"
 
 ## The reference to your global signal bus. You have to replace null
 ## with your own global bus.
-static var global_bus : Node = null
+static var global_bus : Node = null # <--- REPLACE THIS !!! (for example EventBus, MessageBus, Signalton)
 
 ## A property to quickly disable printing from editor, if it makes
 ## the output too cluttered
