@@ -19,7 +19,7 @@ item : Item = <Resource#-9223371996253911657> _// It even recognizes custom Reso
 index : int = 1 _// And has support for Variant types_
 time (ticks msec) = 17442
 
-![Example output screenshot](assets\OutputExample.JPG "Example output screenshot")
+![Example output screenshot](https://github.com/officialduke99/SignalPrinter/blob/main/assets/OutputExample.JPG?raw=true)
 
 ## Usage
 You **need** to replace `global_bus` in [signal_printer.gd](addons/signal_printer/signal_printer.gd) script with your own singleton's reference. Otherwise you get an error. 
@@ -37,7 +37,7 @@ You pass the singleton in directly, not by its name.
 `static var global_bus : Node = "EventBus"` :x:
 
 After that, you can add this node anywhere in the scene and remove it, when you don't need it anymore.
-![Node in scene](assets\NodeInScene.JPG) ![Node properties](assets\EditableProperties.JPG)
+![Node in scene](https://github.com/officialduke99/SignalPrinter/blob/main/assets/NodeInScene.JPG?raw=true) ![Node properties](https://github.com/officialduke99/SignalPrinter/blob/main/assets/EditableProperties.JPG?raw=true)
 
 ### Warning
 As GDScript currently doesn't support variable argument count, arguments in the function are added manually. Currently, the _max argument count per signal is **10**_, but if you need more, you can add them easily. 
