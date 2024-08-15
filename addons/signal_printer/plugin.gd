@@ -3,7 +3,7 @@ extends EditorPlugin
 
 const TYPE_NAME : String = "SignalPrinter"
 const SCRIPT : GDScript = preload("res://addons/signal_printer/signal_printer.gd")
-const ICON : Texture2D = preload("res://icon.svg")
+const ICON : Texture2D = preload("res://addons/signal_printer/icon.svg")
 
 func _enter_tree() -> void:
 	add_custom_type(TYPE_NAME, "Node", SCRIPT, ICON)

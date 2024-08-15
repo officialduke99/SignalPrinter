@@ -12,7 +12,7 @@ config_version=5
 
 config/name="SignalPrinter"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://addons/signal_printer/icon.svg"
 
 [editor_plugins]
 
