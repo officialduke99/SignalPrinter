@@ -10,14 +10,14 @@ This plugin adds a `SignalPrinter` node, which automatically connects to all sig
 
 Example output:
 
-><u>**player_interacted**</u>
-with : Node3D = Pickup:<Area3D#41657828805> _// The type is the same as was declared in the signal itself_
-time (ticks msec) = 4647
+><u>**player_interacted**</u><br>
+with : Node3D = Pickup:<Area3D#41657828805> _// The type is the same as was declared in the signal itself_<br>
+time (ticks msec) = 4647<br>
 
-><u>**inventory_item_changed**</u>
-item : Item = <Resource#-9223371996253911657> _// It even recognizes custom Resource types (Item)_
-index : int = 1 _// And has support for Variant types_
-time (ticks msec) = 17442
+><u>**inventory_item_changed**</u><br>
+item : Item = <Resource#-9223371996253911657> _// It even recognizes custom Resource types (Item)_<br>
+index : int = 1 _// And has support for Variant types_<br>
+time (ticks msec) = 17442<br>
 
 ![Example output screenshot](https://github.com/officialduke99/SignalPrinter/blob/main/assets/OutputExample.JPG?raw=true)
 
@@ -27,16 +27,16 @@ You **need** to replace `global_bus` in [signal_printer.gd](addons/signal_printe
 ### Example
 If your global bus is named `EventBus`, you simply replace null with EventBus
 
-From:
+From:<br>
 `static var global_bus : Node = null` :x:
 
-To:
+To:<br>
 `static var global_bus : Node = EventBus` :heavy_check_mark:
 
-You pass the singleton in directly, not by its name.
+You pass the singleton in directly, not by its name.<br>
 `static var global_bus : Node = "EventBus"` :x:
 
-After that, you can add this node anywhere in the scene and remove it, when you don't need it anymore.
+After that, you can add this node anywhere in the scene and remove it, when you don't need it anymore.<br>
 ![Node in scene](https://github.com/officialduke99/SignalPrinter/blob/main/assets/NodeInScene.JPG?raw=true) ![Node properties](https://github.com/officialduke99/SignalPrinter/blob/main/assets/EditableProperties.JPG?raw=true)
 
 ### Warning
